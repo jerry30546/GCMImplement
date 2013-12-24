@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+
+    <listener>
+        <listener-class>
+            wii.android.gcm.server.ApiKeyInitializer
+        </listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>RegisterFunction</servlet-name>
+        <servlet-class>
+            wii.android.gcm.server.Register
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterFunction</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UnRegisterFunction</servlet-name>
+        <servlet-class>
+            wii.android.gcm.server.Unregister
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UnRegisterFunction</servlet-name>
+        <url-pattern>/unregister</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SendMessageFunction</servlet-name>
+        <servlet-class>
+            wii.android.gcm.server.SendMessages
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SendMessageFunction</servlet-name>
+        <url-pattern>/sendAll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <servlet-class>
+            wii.android.gcm.server.HomeIndex
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+</web-app>

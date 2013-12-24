@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AndroidAPP.iml" filepath="$PROJECT_DIR$/../AndroidAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GCMClientImplement.iml" filepath="$PROJECT_DIR$/GCMClientImplement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GCMClientImplement/GCMClientImplement-GCMClientImplement.iml" filepath="$PROJECT_DIR$/GCMClientImplement/GCMClientImplement-GCMClientImplement.iml" />
+    </modules>
+  </component>
+</project>
+
