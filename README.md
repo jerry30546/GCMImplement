@@ -6,7 +6,7 @@ GCM主要功能是透過Google的連結伺服器發佈信息給Android的裝置�
 舉例來說：A在B的FB塗鴉牆上留言，FB將藉由推播系統通知B說"有人在你塗鴉牆留言"，這時候B的手機就會跳出通知來了唷。
 **不過！**這個例子其實不太正確，原因是FB並不是使用GCM達到這些功能的，Facebook使用MQTT這項技術自行架設推播服務平台，這樣一來就不會受限於Google了!
 若你有安裝Facebook APP的話可以在 設定 -> 應用程式管理 -> 執行中 點擊該應用程式來看即會看到如下畫面:
-**MqttPushService**即是一支背景程式負責接收來自FB的推播訊息
+**MqttPushService**即是一支背景程式負責接收來自FB的推播訊息<br>
 <img class="center" src="http://user-image.logdown.io/user/756/blog/753/post/234580/n73XbaxThqqRoq1i03ka_Screenshot_2014-09-23-16-54-11%5B1%5D.png" alt="Screenshot_2014-09-23-16-54-11[1].png" width="300">
 <hr>
 在開發上，GCM的應用主要架構如下圖所示:
